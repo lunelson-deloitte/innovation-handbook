@@ -1,0 +1,98 @@
+--- 
+title: "Innovation Handbook"
+author: "Lucas Nelson"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+site: bookdown::bookdown_site
+documentclass: book
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+output: bookdown::bs4_book
+description: |
+  This is an informal collection of resources dedicated to
+  summarizing, discussing, and advancing innovation in Audit
+  Analytics.
+---
+
+# Preface {-}
+
+---
+
+It would be an understatement to say there is *plenty* of buzz surrounding the
+Audit Analytics practice. Adopting Databricks has introduced compute resources
+that were previously unattainable. The recent class of new hires display a
+highly technical skill set and equally passionate "*innovation-set*". Our Data
+Science neighbors' work using large language models opens up a whole new realm
+of revolutionizing audit procedures.
+
+With this buzz comes a lot of great ideas, ideas that - if given adequate
+resources - could truly reshape the way our group operates.
+
+The keen reader would have noticed the rather vague phrase "if given adequate
+resources." Unfortunately, the field of audit has many self-imposed, yet
+arguably reasonable, limitations that negate innovative ideas.
+
+Rather than accept these limitations and self-impose the end of our own ideas,
+I'd instead like to advocate for the opposite. Given my time in this group, I
+have worked on an array of innovation projects. Some are immediate fixes; others
+span many months. Some only reach a few people; others impact the entire
+group. Some are interesting; others are very interesting.
+
+
+## What is the *The Innovation Handbook*?{- .unlisted #innovation-handbook}
+
+[The Innovation Handbook](#innovation-handbook) is an
+informal collection of resources dedicated to summarizing, discussing, and
+advancing innovation in Audit Analytics. Over the course of the book, I hope to
+present a generic template for any innovation project to follow. Some common
+themes this book will address include:
+
+- How do I *structure* my innovation project?
+
+- How do innovation projects *connect* to one another?
+
+- How could we define a "**successful**" innovation project?
+
+This book could be read cover-to-cover or (more likely) this book could be read
+as a reference guide, something to refer to for specific sections from time to
+time. Given this book discusses innovation, the content may become outdated
+quicker than other books; hence, frequent revisions may be required.
+
+
+## What is The Scope of This Book? {- .unlisted}
+
+Let's start with what this book is **not**.
+
+- This book is **not a rubric for you to follow**. Part of innovating is
+discussing and discovering those boundaries that define success on your own.
+Although innovation projects could (and arguably should) relate to one another
+in some ways, they should actively establish their own boundaries.
+
+- This book is **not a source of truth**. Although I'd like to think that the ideas I
+present here have merit, they are the result of my unique experiences. I hope
+that while reading this book, you agree and disagree with what I have to say, as
+this will lead to productive discussions about how we fundamentally view
+innovation in Audit Analytics.
+
+- This book is **not a manifesto**. *No political ideologies will be discussed.*
+
+Onto the good stuff: what this book **is**.
+
+- This book is a **philosophical debate**. One underlying tone I've observed is that
+innovation is put in a faded light, something that some feel comfortable
+discussing and few feel comfortable doing. I will endlessly advocate for both
+those populations to increase as much as possible.
+
+- This book is a long-winded way of saying "**anyone can innovate**." Just like
+Ratatouille's *Anyone Can Cook*, everyone should have the confidence and
+resources to pursue their innovative ideas.
+
+- This book is a **work-in-progress** and always will be a work-in-progress. It would
+be a shame if a book about innovation was itself not innovative.
+
+
+## Soapbox: My Personal Perspective {- .unlisted}
+
+At the end of some sections and chapters, I have added “Soapbox” sections that
+give my thoughts in more detail. Typically these "thoughts" are synonymous with
+"my opinions" - regardless of the underlying tone of these blocks of text, these
+blocks are completely optional (as if the rest of this book isn't).

@@ -1,0 +1,85 @@
+# Appendix {-}
+
+The sections below complement other sections throughout the book, elaborating
+on previous points or offering my own thoughts that extend the scope of the
+book. This material is optional, highly specific, and (it goes without saying)
+very opinionated. Read at your own caution.
+
+## The Role of the Software Developer {- .unlisted}
+
+> **Soapbox**: This will be the most opinionated section of the book. I have
+very strong feelings of how a software developer should contribute to an
+innovation project, and even stronger opinions for the opposite.  
+
+> **Soapbox**: Nowhere on my LinkedIn page will you find the title "Software
+Developer", a degree in computer science, or certificates from tech companies.
+I only know what I know, and I'm happy to admit there's a lot that I do not
+know. 
+
+## Soapbox: My Software-Developing Philosophies {- .unlisted}
+
+I've been called boring plenty more times than I've been called exciting. I
+listen to music that puts others to sleep. I like watching sports teams on
+defense more than on offense. Maybe I'm boring because I prefer boring, and you
+should consider it, too.
+
+I really like working with boring programmers much more than exciting
+programmers. How do I define an *exciting programmer*? Someone who jumps at
+every trend, or spreads themselves thin trying to stay up to date with the
+newest, shiniest toys, or tries implementing cool features wherever possible.
+How can I dislike innovation? Simple thanks to something I call innovation
+*without reason*. Adding "new" features just because they're new is a terrible
+development philosophy; it prioritizes aesthetics over functionality, needless
+updates over necessary updates, and (behind the scenes) ego over cohesion.
+
+That must mean lazy programmers stick to the books and never change anything
+once it's written, right? No. Lazy programmers ...
+
+- link to lazy programming
+- link to defensive programming
+- [Principle of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment)
+
+## Innovation Resources {- .unlisted}
+
+### Project Management
+
+**Thrills and Chills: Establishing Product Marketing** ([Spotify](https://open.spotify.com/show/4Q4BBL0eJPvRUMaT2rFOUC))
+
+I only started listening to this podcast recently.
+
+
+### Software Development
+
+Audit Analytics has a *unique* technology stack: Excel, SAS, R, and Databricks.
+Listing those on my resume might be seen as a call for help by others.
+Subliminal messages aside, the following are resources that software developers
+could resort to in the future, broken out by domain-specific categories rather
+than language-specific categories (not to be confused with domain-specific-languages.)
+
+Not every topic will entirely cover our group's technology stack. I'll instead
+focus on the aspects of our current technology stack that I like and the aspects
+of our current technology stack that are unused (that I also like).
+
+#### DataFrames
+
+#### Python
+
+I know I know. "You said you would stick to domains and not languages." You got
+me. Let's go ahead and delete this book before anyone else realizes that I am a
+liar.
+
+Well, you're still reading so you're okay with the fact that I am a liar. What I
+will not lie about is that Python deserves its own section for a couple reasons:
+
+- I could speak highly about it for at least seven minutes uninterrupted.
+
+- It is the language I've worked with the longest and am most comfortable with
+(sorry `R`, the language used to author this book), and I think most can relate.
+
+- It should be the only language our group utilizes. Period.
+
+I do think Python attracts "*the wrong crowd*" and is improperly utilized by the
+vast majority of people you and I know (myself being one of them). Don't get me
+wrong, Python is still a wonderful language that has a supportive community
+(despite what I just said). In combination with the technical resources below,
+I'll share some non-technical resources that guide my Python philosophy.

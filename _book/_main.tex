@@ -1,0 +1,505 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Innovation Handbook},
+  pdfauthor={Lucas Nelson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Innovation Handbook}
+\author{Lucas Nelson}
+\date{December 23, 2023}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+It would be an understatement to say there is \emph{plenty} of buzz surrounding the
+Audit Analytics practice. Adopting Databricks has introduced compute resources
+that were previously unattainable. The recent class of new hires display a
+highly technical skill set and equally passionate ``\emph{innovation-set}''. Our Data
+Science neighbors' work using large language models opens up a whole new realm
+of revolutionizing audit procedures.
+
+With this buzz comes a lot of great ideas, ideas that - if given adequate
+resources - could truly reshape the way our group operates.
+
+The keen reader would have noticed the rather vague phrase ``if given adequate
+resources.'' Unfortunately, the field of audit has many self-imposed, yet
+arguably reasonable, limitations that negate innovative ideas.
+
+Rather than accept these limitations and self-impose the end of our own ideas,
+I'd instead like to advocate for the opposite. Given my time in this group, I
+have worked on an array of innovation projects. Some are immediate fixes; others
+span many months. Some only reach a few people; others impact the entire
+group. Some are interesting; others are very interesting.
+
+\hypertarget{innovation-handbook}{%
+\section*{\texorpdfstring{What is the \emph{Innovation Handbook}?}{What is the Innovation Handbook?}}\label{innovation-handbook}}
+
+Innovation projects present their unique challenges and attempt to construct
+their unique solutions. The \protect\hyperlink{innovation-handbook}{Innovation Handbook} is an
+informal collection of resources dedicated to summarizing, discussing, and
+advancing innovation in Audit Analytics. Over the course of the book, I hope to
+present a generic template for any innovation project to follow. Some common
+themes this book will address include:
+
+\begin{itemize}
+\item
+  How do I \emph{structure} my innovation project?
+\item
+  How do innovation projects \emph{connect} to one another?
+\item
+  How could we define a ``\textbf{successful}'' innovation project?
+\end{itemize}
+
+This book could be read cover-to-cover or (more likely) this book could be read
+as a reference guide, something to refer to for specific sections from time to
+time. Given this book discusses innovation, the content may become outdated
+quicker than other books; hence, frequent revisions may be required.
+
+\hypertarget{what-is-the-scope-of-this-book}{%
+\section*{What is The Scope of This Book?}\label{what-is-the-scope-of-this-book}}
+
+Let's start with what this book is \textbf{not}.
+
+This book is not a rubric for you to follow. Part of innovating is
+discussing and discovering those boundaries that define success on your own.
+Although innovation projects could (and arguably should) relate to one another
+in some ways, they should actively establish their own boundaries.
+
+This book is not a source of truth. Although I'd like to think that the ideas I
+present here have merit, they are the result of my unique experiences. I hope
+that while reading this book, you agree and disagree with what I have to say, as
+this will lead to productive discussions about how we fundamentally view
+innovation in Audit Analytics.
+
+This book is not a manifesto. \emph{No political ideologies will be discussed.}
+
+Onto the good stuff: what this book \textbf{is}.
+
+This book is a philosophical debate. One underlying tone I've observed is that
+innovation is put in a faded light, something that some feel comfortable
+discussing and few feel comfortable doing. I will endlessly advocate for both
+those populations to increase as much as possible.
+
+This book is a long-winded way of saying ``anyone can innovate.'' Just like
+Ratatouille's \emph{Anyone Can Cook}, everyone should have the confidence and
+resources to pursue their innovative ideas.
+
+This book is a work-in-progress and always will be a work-in-progress. It would
+be a shame if a book about innovation was itself not innovative.
+
+\hypertarget{soapbox-my-personal-perspective}{%
+\section*{Soapbox: My Personal Perspective}\label{soapbox-my-personal-perspective}}
+
+At the end of some sections and chapters, I have added ``Soapbox'' sections that
+give my thoughts in more detail. Typically these ``thoughts'' are synonymous with
+``my opinions'' - regardless of the underlying tone of these blocks of text, these
+blocks are completely optional (as if the rest of this book isn't).
+
+\hypertarget{about-the-author}{%
+\chapter*{About the Author}\label{about-the-author}}
+\addcontentsline{toc}{chapter}{About the Author}
+
+\ldots{}
+
+\hypertarget{introduction-to-innovation}{%
+\chapter{Introduction to Innovation}\label{introduction-to-innovation}}
+
+\hypertarget{a-brief-history}{%
+\section{A Brief History}\label{a-brief-history}}
+
+\emph{What have the last couple years looked like for innovation in Audit Analytics?}
+
+\hypertarget{modern-day}{%
+\section{Modern Day}\label{modern-day}}
+
+\emph{Where is that state of innovation in Audit Analytics today?}
+
+\emph{Who/What are the ``sources of innovation''?}
+
+Innovation appeals to everyone in unique ways. Some are interested in the
+
+\hypertarget{before-ai-takes-over}{%
+\section{Before AI Takes Over}\label{before-ai-takes-over}}
+
+\emph{How much longer will I have a job before the AI overlords become sentient?}
+
+That title was clickbait.
+
+\hypertarget{the-roles-on-a-team}{%
+\chapter{The Roles on a Team}\label{the-roles-on-a-team}}
+
+\hypertarget{a-tangent-stone-carving}{%
+\section{A Tangent: Stone Carving}\label{a-tangent-stone-carving}}
+
+\begin{quote}
+``Every block of stone has a statue inside it and it is the task of the
+sculptor to discover it.''
+
+\hfill --- Michelangelo (supposedly)
+\end{quote}
+
+Everyone has something they marvel at every time they comes across it; my marvel
+is stone carving.
+
+Stone carving is not an exact art form, but I like to think of it following
+three generic steps:
+
+\begin{itemize}
+\item
+  There is no sculpture without first \textbf{extracting the stone}, carefully
+  selecting the stone that best suits the characteristics the sculptor requires.
+\item
+  There is no sculpture without \textbf{sketching the outline}, determining which
+  parts of the rock to chip away and which parts not to chip away given the
+  characteristics of the stone.
+\item
+  There is no sculpture without \textbf{carving the masterpiece}, selecting the
+  right tools for the job given the outline sketched previously.
+\end{itemize}
+
+Sculptures require these three steps to build off of one another based on
+the sculptor's needs. The sculptor should aim to make their most elegant
+sculpture given the limitations of the stone they've extracted, the vision they
+have in their head, and the tools they have available to them. Once they start
+chipping away at the stone, they cannot replace the missing shards, only able
+to work their way down to the statue inside the block of stone.
+
+\hypertarget{carving-innovation-stones}{%
+\section{\texorpdfstring{Carving \emph{Innovation Stones}}{Carving Innovation Stones}}\label{carving-innovation-stones}}
+
+Unsurprisingly, we do not have stones lying around the office, although it would
+be pretty cool if we did. Instead, we have ideas that have yet to be made
+clear, ideas that - if given adequate resources - could elevate our existing
+processes or introduce new solutions.
+
+\hypertarget{soapbox-discussing-innovation-freely}{%
+\section{Soapbox: Discussing Innovation Freely}\label{soapbox-discussing-innovation-freely}}
+
+One outcome of this book is to \textbf{encourage innovation-related discussions}.
+Although this section details a rather formal approach for structuring ideas,
+most innovation projects (should) start with a simple conversation. Asking
+others' what they wish could be different is the perfect path to a two-way
+conversation about how you can help make someone's life easier. Who wouldn't
+want that?
+
+I do think these conversations lend themselves to a couple pitfalls, some of
+which I mentioned above. It is worth reiterating that the primary goals of
+these conversations is to conduct ``research'' - you want to gather opinions
+from people who can relate to the problem at hand, asking broad questions
+that encourage critiques and invite solutions. Avoid coming up with solutions
+within the same breath as this can negatively limit the scope of the project
+from ``\emph{everything-it-could-possibly-be}'' to
+``\emph{anything-you-are-comfortable-with}''.
+
+\hypertarget{parts}{%
+\chapter{Parts}\label{parts}}
+
+You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+
+Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+
+Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+
+Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+
+\hypertarget{footnotes-and-citations}{%
+\chapter{Footnotes and citations}\label{footnotes-and-citations}}
+
+\hypertarget{footnotes}{%
+\section{Footnotes}\label{footnotes}}
+
+Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+
+\hypertarget{citations}{%
+\section{Citations}\label{citations}}
+
+Reference items in your bibliography file(s) using \texttt{@key}.
+
+For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
+Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+
+The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+
+\hypertarget{blocks}{%
+\chapter{Blocks}\label{blocks}}
+
+\hypertarget{equations}{%
+\section{Equations}\label{equations}}
+
+Here is an equation.
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \label{eq:binom}
+\end{equation}
+
+You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+
+\hypertarget{theorems-and-proofs}{%
+\section{Theorems and proofs}\label{theorems-and-proofs}}
+
+Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+
+\begin{theorem}
+\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
+\[a^2 + b^2 = c^2\]
+\end{theorem}
+
+Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+
+\hypertarget{callout-blocks}{%
+\section{Callout blocks}\label{callout-blocks}}
+
+The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+
+\hypertarget{sharing-your-book}{%
+\chapter{Sharing your book}\label{sharing-your-book}}
+
+\hypertarget{publishing}{%
+\section{Publishing}\label{publishing}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages}{%
+\section{404 pages}\label{pages}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing}{%
+\section{Metadata for sharing}\label{metadata-for-sharing}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
+
+Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
+
+Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{appendix}{%
+\chapter*{Appendix}\label{appendix}}
+\addcontentsline{toc}{chapter}{Appendix}
+
+The sections below complement other sections throughout the book, elaborating
+on previous points or offering my own thoughts that extend the scope of the
+book. This material is optional, highly specific, and (it goes without saying)
+very opinionated. Read at your own caution.
+
+\hypertarget{the-role-of-the-software-developer}{%
+\section*{The Role of the Software Developer}\label{the-role-of-the-software-developer}}
+
+\begin{quote}
+\textbf{Soapbox}: This will be the most opinionated section of the book. I have
+very strong feelings of how a software developer should contribute to an
+innovation project, and even stronger opinions for the opposite.
+\end{quote}
+
+\begin{quote}
+\textbf{Soapbox}: Nowhere on my LinkedIn page will you find the title ``Software
+Developer'', a degree in computer science, or certificates from tech companies.
+I only know what I know, and I'm happy to admit there's a lot that I do not
+know.
+\end{quote}
+
+\hypertarget{innovation-resources}{%
+\section*{Innovation Resources}\label{innovation-resources}}
+
+\hypertarget{project-management}{%
+\subsection{Project Management}\label{project-management}}
+
+\textbf{Thrills and Chills: Establishing Product Marketing} (\href{https://open.spotify.com/show/4Q4BBL0eJPvRUMaT2rFOUC}{Spotify})
+
+I only started listening to this podcast recently.
+
+\hypertarget{software-development}{%
+\subsection{Software Development}\label{software-development}}
+
+Audit Analytics has a \emph{unique} technology stack: Excel, SAS, R, and Databricks.
+Listing those on my resume might be seen as a call for help by others.
+Subliminal messages aside, the following are resources that software developers
+could resort to in the future, broken out by domain-specific categories rather
+than language-specific categories (not to be confused with domain-specific-languages.)
+
+Not every topic will entirely cover our group's technology stack. I'll instead
+focus on the aspects of our current technology stack that I like and the aspects
+of our current technology stack that are unused (that I also like).
+
+\hypertarget{dataframes}{%
+\subsubsection{DataFrames}\label{dataframes}}
+
+\hypertarget{python}{%
+\subsubsection{Python}\label{python}}
+
+I know I know. ``You said you would stick to domains and not languages.'' You got
+me. Let's go ahead and delete this book before anyone else realizes that I am a
+liar.
+
+Well, you're still reading so you're okay with the fact that I am a liar. What I
+will not lie about is that Python deserves its own section for a couple reasons:
+
+\begin{itemize}
+\item
+  I could speak highly about it for at least seven minutes uninterrupted.
+\item
+  It is the language I've worked with the longest and am most comfortable with
+  (sorry \texttt{R}, the language used to author this book), and I think most can relate.
+\item
+  It should be the only language our group utilizes. Period.
+\end{itemize}
+
+I do think Python attracts ``\emph{the wrong crowd}'' and is improperly utilized by the
+vast majority of people you and I know (myself being one of them). Don't get me
+wrong, Python is still a wonderful language that has a supportive community
+(despite what I just said). In combination with the technical resources below,
+I'll share some non-technical resources that guide my Python philosophy.
+
+\end{document}

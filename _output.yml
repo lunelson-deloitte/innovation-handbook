@@ -1,0 +1,15 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#4D6F8D"
+  style: "style.css"
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><b><a href="./">The Innovation Handbook</a></b></li>
+      after: |
+        <li><i>&nbsp&nbsp&nbsp&nbspWritten by Lucas Nelson</i></li>
+    edit: null
+    download: false
+    sharing: false
+    info: false

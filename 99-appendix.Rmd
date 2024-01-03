@@ -1,0 +1,94 @@
+# Appendix {-}
+
+The sections below complement other sections throughout the book, elaborating
+on previous points or offering my own thoughts that extend the scope of the
+book. This material is optional, highly specific, and (it goes without saying)
+very opinionated.
+
+## The Role of the Software Developer {- .unlisted}
+
+> **Soapbox**: This will be the most opinionated section of the book. I have
+very strong feelings of how a software developer should contribute to an
+innovation project, and even stronger opinions for the opposite.  
+
+> **Soapbox**: Nowhere on my LinkedIn page will you find the title "Software
+Developer", a degree in computer science, or certificates from tech companies.
+I only know what I know, and I'm happy to admit there's a lot that I do not
+know.
+
+Before reading this section, ask yourself how you define the role of a
+software developer. What is it? What do they do? How do they contribute?
+
+**The software developer uses machines to translate intangible ideas into
+tangible applications.**
+
+End of story. Let's pack up and go home.
+
+Sure, "*machines*" is rather vague, and it ends up being "programming" anyway.
+
+
+
+
+## My Software-Developing Philosophies {- .unlisted}
+
+It is really exhausting keeping up with technology trends. One day you're
+hearing about `JobReplacer3000` just to learn about `JobReplacer4000` the
+next day. Soon `JobReplacerX` will be too large a number for me to count.
+(Now you know I can at least count to 4000.)
+
+It is even more exhausting convincing myself that I need to keep up with
+these trends. There's no greater sense of doom scrolling through LinkedIn
+reading all the posts of new products that people suddenly became experts
+in overnight.
+
+Posts like these not only make me want to uninstall LinkedIn - they remind
+me that software development is more than just a flashy job title. At its
+core, software development is about problem solving, and the better you
+are at solving problems, the better you are at developing software.
+
+The key is recognizing a couple crucial details:
+
+- each problem is an aggregation of many smaller problems
+
+- each problem requires a specific solution
+
+- each problem exists for a reason
+
+If you aren't getting those bullet points tattooed right now then you will
+never be a software developer. *Just kidding*.
+
+When approaching a problem, break it up into chunks. Figure out what you
+need to address and (bonus points) how you can write solutions that address
+multiple problems effectively. Writing those solutions requires specific
+tools, and knowing which one(s) to use to most effectively solve the problem(s)
+is an invaluable skill. Most invaluable, however, is knowing where to focus
+your efforts and where not to focus your efforts. This scope alone should
+be enough to tackle any problem you face.
+
+I might have studied statistics but I am not a mathematician. I *deeply* fear
+mathematical proofs but I do believe they are a great application of these
+details. Scroll to any page in [this book](https://nessie.ilab.sztaki.hu/~kornai/2022/MatematikaAlapjai/ChartrandPolimeniZhang.pdf)
+and just skim through a proof.
+
+What do you see?
+
+These proofs contain much more text than symbols or numbers. They reason
+through everything more than they focus on the (math gods, forgive me)
+numerical gibberish. They tell a *story*. They setup the problem by breaking
+it down step by step. They say what they'll use to address the problem. They
+then explain how what they've selected proves the result.
+
+Software development should be the same. It's not about jumping on the latest
+trends or writing the most cursed, incomprehensible nested loops that can sort
+arrays with $O(nlog(n))$ time complexity. It's about telling a story, and as
+you spend more and more time deliberately crafting meaningful stories, you will
+become an irreplaceable software developer.
+
+Rather than hearing only what I have to say, I highly recommend reading any of
+these resources. Of course, there's more than what's listed here, but that's
+up for you to discover.
+
+- [Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
+- [Another *Lazy Programmer* stance](https://www.jerf.org/programming/lazyProgrammersGuide.html)
+- [Defensive programming](https://en.wikipedia.org/wiki/Defensive_programming)
+- [Principle of Least Astonishment](https://en.wikipedia.org/wiki/Principle_of_least_astonishment)
