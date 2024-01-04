@@ -77,19 +77,19 @@ Onto the good stuff: what this book **is**.
 - This book is a **philosophical debate**. One underlying tone I've observed is that
 innovation is put in a faded light, something that some feel comfortable
 discussing and few feel comfortable doing. I will endlessly advocate for both those
-choices to become more frequent and readily-available actions items for our group.
+options to become more common and readily-available actions items for our group.
 
 - This book is a long-winded way of saying "**anyone can innovate**." Just like
 Ratatouille's *Anyone Can Cook*, everyone should have the confidence and
-resources to pursue their innovative ideas.
+support to pursue their innovative ideas.
 
-- This book is a **work-in-progress** and always will be a work-in-progress. It would
+- This book is a **work-in-progress**. It always will be a work-in-progress. It would
 be a shame if a book about innovation was itself not innovative.
 
 
 ## Soapbox: My Personal Perspective {- .unlisted}
 
 At the end of some sections and chapters, I have added “Soapbox” sections that
-give my thoughts in more detail. Typically these "thoughts" are synonymous with
-"my opinions" - regardless of the underlying tone of these blocks of text, these
-blocks are completely optional (as if the rest of this book isn't).
+give my thoughts in more detail. Typically these "thoughts" are synonyms for my
+"opinions" - regardless of the underlying tone of these blocks of text, these
+snippets are completely optional (as if the rest of this book isn't).

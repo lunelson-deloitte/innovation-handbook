@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>4 Technology Stack | Innovation Handbook</title>
 <meta name="author" content="Lucas Nelson">
-<meta name="description" content="4.1 Current something here  4.2 Future something here  4.3 Ideal something here">
+<meta name="description" content="Having a solid developer environment is like having a comfy workspace for a coder. It’s not just about having a cool-looking code editor or a virtual environment to keep things tidy — it’s about...">
 <meta name="generator" content="bookdown 0.37 with bs4_book()">
 <meta property="og:title" content="4 Technology Stack | Innovation Handbook">
 <meta property="og:type" content="book">
-<meta property="og:description" content="4.1 Current something here  4.2 Future something here  4.3 Ideal something here">
+<meta property="og:description" content="Having a solid developer environment is like having a comfy workspace for a coder. It’s not just about having a cool-looking code editor or a virtual environment to keep things tidy — it’s about...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="4 Technology Stack | Innovation Handbook">
-<meta name="twitter:description" content="4.1 Current something here  4.2 Future something here  4.3 Ideal something here">
+<meta name="twitter:description" content="Having a solid developer environment is like having a comfy workspace for a coder. It’s not just about having a cool-looking code editor or a virtual environment to keep things tidy — it’s about...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.5.0/transition.js"></script><script src="libs/bs3compat-0.5.0/tabs.js"></script><script src="libs/bs3compat-0.5.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -45,10 +45,10 @@
 <li><a class="" href="index.html">Preface</a></li>
 <li><a class="" href="about-the-author.html">About the Author</a></li>
 <li><a class="" href="innovation-in-audit-analytics.html"><span class="header-section-number">1</span> Innovation in Audit Analytics</a></li>
-<li><a class="" href="the-roles-on-a-team.html"><span class="header-section-number">2</span> The Roles on a Team</a></li>
+<li><a class="" href="the-roles-of-an-innovation-project.html"><span class="header-section-number">2</span> The Roles of an Innovation Project</a></li>
 <li><a class="" href="contributing-to-innovation.html"><span class="header-section-number">3</span> Contributing to Innovation</a></li>
 <li><a class="active" href="technology-stack.html"><span class="header-section-number">4</span> Technology Stack</a></li>
-<li><a class="" href="opportunistic-areas.html"><span class="header-section-number">5</span> Opportunistic Areas</a></li>
+<li><a class="" href="areas-of-opportunity.html"><span class="header-section-number">5</span> Areas of Opportunity</a></li>
 <li><a class="" href="appendix.html">Appendix</a></li>
 </ul>
 
@@ -61,36 +61,157 @@
 <h1>
 <span class="header-section-number">4</span> Technology Stack<a class="anchor" aria-label="anchor" href="#technology-stack"><i class="fas fa-link"></i></a>
 </h1>
-<div id="current" class="section level2" number="4.1">
+<p>Having a solid developer environment is like having a comfy workspace for a coder. It’s not just about having a cool-looking code editor or a virtual environment to keep things tidy — it’s about creating a space where creativity and efficiency can thrive. An IDE (Integrated Development Environment) is like your personalized command center, with features that help you write, debug, and navigate code with ease. Virtual environments (<code>venv</code>) are like mini coding sanctuaries, keeping your projects isolated and preventing compatibility chaos. These tools aren’t just fancy accessories; they’re the backbone of productive coding. Imagine trying to build a masterpiece without a clean canvas and good brushes — it’s possible, but why make it harder on yourself? A well-organized and tailored developer environment is the secret sauce that turns lines of code into functional and elegant software.</p>
+<div id="the-developer-environment" class="section level2" number="4.1">
 <h2>
-<span class="header-section-number">4.1</span> Current<a class="anchor" aria-label="anchor" href="#current"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4.1</span> The Developer Environment<a class="anchor" aria-label="anchor" href="#the-developer-environment"><i class="fas fa-link"></i></a>
 </h2>
-<p>something here</p>
+<p>Before getting into specific technologies, I want to stress the importance of setting up a developer environment that works for you. The more time you spend setting up a toolbench that suits your needs, the less time you spend navigating your toolkit in the future, allowing you to be more efficient, more organized, and more cognizant of software developing best practices.</p>
+<div id="integrated-development-environment-ide" class="section level3 unnumbered">
+<h3>Integrated Development Environment (IDE)<a class="anchor" aria-label="anchor" href="#integrated-development-environment-ide"><i class="fas fa-link"></i></a>
+</h3>
+<blockquote>
+<p><a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+</blockquote>
+<p>IDE is another term for <em>fancy text editor</em>. You could type everything in a text file, or you could develop in an enhanced text editor that will validate that what you’re typing is “correct” (as defined by the IDE) and make things look pretty with syntax highlighting. IDEs are good for <a href="https://en.wikipedia.org/wiki/Lint_(software)">linting</a> your code, making sure that the thing you shouldn’t be doing is brought to your attention before doing it. You could lint code yourself (linters like <a href="https://github.com/astral-sh/ruff">Ruff</a> get pretty techy with it), but if you’re looking for a good place to start, get an IDE like Visual Studio Code, add a couple extensions, and get coding.</p>
 </div>
-<div id="future" class="section level2" number="4.2">
-<h2>
-<span class="header-section-number">4.2</span> Future<a class="anchor" aria-label="anchor" href="#future"><i class="fas fa-link"></i></a>
-</h2>
-<p>something here</p>
+<div id="virtual-environments-venv" class="section level3 unnumbered">
+<h3>Virtual Environments (<code>venv</code>)<a class="anchor" aria-label="anchor" href="#virtual-environments-venv"><i class="fas fa-link"></i></a>
+</h3>
+<blockquote>
+<ul>
+<li><p>Python’s base <a href="https://docs.python.org/3/library/venv.html"><code>venv</code></a> library</p></li>
+<li><p>R’s <a href="https://rstudio.github.io/renv/articles/renv.html"><code>renv</code></a> package</p></li>
+</ul>
+</blockquote>
+<p>Virtual environments are the coding-equivalent for flossing your teeth; you know you should do it but sometimes you “forget” and say you’ll do it next time. Admittedly, this is me, so maybe it’s not fair for me to take the role of virtual-environment-dentist and criticize you.</p>
+<p>Virtual environments are great outlets for organizing your development environments. They allow you to isolate specific sets of packages (and even specific versions of packages) from one another, allowing you to operate under a specific environment freely. This also protects your code against unintentional updates to any of the packages you require, letting you live “in the good old days” as long as you don’t delete your virtual environment.</p>
 </div>
-<div id="ideal" class="section level2" number="4.3">
+<div id="packages-modules" class="section level3 unnumbered">
+<h3>Packages &amp; Modules<a class="anchor" aria-label="anchor" href="#packages-modules"><i class="fas fa-link"></i></a>
+</h3>
+<blockquote>
+<ul>
+<li><p>The <a href="https://py-pkgs.org/">Py-Pkgs</a> book is a great resource for getting up to speed</p></li>
+<li><p>The <a href="https://r-pkgs.org/">R Packages</a> book is a deep dive into packaging in R (also Hadley Wickham is great)</p></li>
+</ul>
+</blockquote>
+<p>The next stop on this coding-equivalent train is recycling your code. Rather than building things from scratch every time, developing packages and modules, even if just for your own use, allow you to skip “square one” every time you get into the swing of things.</p>
+<p>This can involve setting up configuration files that you rely on, importing commonly used constants or functions, or even just documenting your thoughts in a centralized repository. It also opens the door for sharing your work with others, promoting collaboration and requiring you to continuously maintain the integrity of your package/module.</p>
+</div>
+<div id="version-control" class="section level3 unnumbered">
+<h3>Version Control<a class="anchor" aria-label="anchor" href="#version-control"><i class="fas fa-link"></i></a>
+</h3>
+<blockquote>
+<ul>
+<li><p><a href="https://git-scm.com/">Git</a></p></li>
+<li><p><a href="https://github.com/">GitHub</a></p></li>
+</ul>
+</blockquote>
+<p>Comfort with Git and GitHub is a non-negotiable requirement Git, the distributed version control system, ensures seamless collaboration and tracks changes with precision. GitHub, as the platform of choice for hosting repositories, provides a centralized hub for teamwork. Proficiency in these tools is paramount for version control, branching strategies, and collaborative coding. In essence, a developer well-versed in Git and GitHub is equipped to contribute effectively to projects, maintain code integrity, and navigate the collaborative nature of modern software development</p>
+</div>
+<div id="command-line" class="section level3 unnumbered">
+<h3>Command Line<a class="anchor" aria-label="anchor" href="#command-line"><i class="fas fa-link"></i></a>
+</h3>
+<blockquote>
+<ul>
+<li>
+<a href="https://linuxcommand.org/tlcl.php">Linux</a> - it’s unfair to say “this is what I am comfortable with”, but this is what I am comfortable with</li>
+</ul>
+</blockquote>
+<p>Proficiency in the command line is a cornerstone skill. It serves as a fundamental tool for tasks ranging from file navigation to script execution and debugging. Being adept at the command line not only enhances efficiency but also empowers developers to streamline workflows and troubleshoot with precision. In essence, it’s a practical and indispensable asset for any developer looking to navigate the complexities of coding with ease and precision.</p>
+</div>
+</div>
+<div id="specific-technologies" class="section level2" number="4.2">
 <h2>
-<span class="header-section-number">4.3</span> Ideal<a class="anchor" aria-label="anchor" href="#ideal"><i class="fas fa-link"></i></a>
+<span class="header-section-number">4.2</span> Specific Technologies<a class="anchor" aria-label="anchor" href="#specific-technologies"><i class="fas fa-link"></i></a>
 </h2>
-<p>something here</p>
+<p>Story time. During the first week of college, I spent a lot of time looking through all the courses my school had to offer. I hadn’t taken a programming class at that time, but that didn’t stop me from browsing through the Computer Science department’s catalog, bookmarking every class that mentioned a programming language I had never heard of before. I took out a Post-It note, wrote them down, and stuck it on my desk to remind myself that I <em>needed</em> to learn these languages.</p>
+<blockquote>
+<p>Just checked, I wrote down 17 different languages.</p>
+</blockquote>
+<p>Fast forward to current day, I am comfortable using two languages and actively avoid trying to add a third unless absolutely necessary. I very quickly learned that there’s no benefit in knowing surface-level details across many languages; the real power is in reaching the depths of fewer languages, and each time you reach “the bottom” you realize you’re nowhere near it.</p>
+<p>Before reading this section, consider that last sentence. If the recursive feeling of “never reaching the bottom” makes you feel uncomfortable, really try to push past that feeling. I am by no means a professional athlete, but one thing I’ll hear any athlete say is that they are comfortable being uncomfortable, that they perform their best when the odds are stacked against them. Computer science is an intimidating field only if you allow it to intimidate you. Embrace these feelings, learn from your experiences, and you’ll reach deeper and deeper depths.</p>
+<div id="python" class="section level3 unnumbered">
+<h3>Python<a class="anchor" aria-label="anchor" href="#python"><i class="fas fa-link"></i></a>
+</h3>
+<p>Is it really a surprise Python is on here? I am going to try my best to avoid saying anything you already know. Instead, I’ll just list some things I’m really excited about that you should look into:</p>
+<p><strong>Rust Integration</strong></p>
+<p>Python is not a low-level language and suffers from “slow” run-time performance. <em>Old news</em>. Although there are packages like <code>CPython</code> and <code>Numba</code> have tried to introduce low-level features to “make Python faster”, the new, cool, hip thing to do nowadays is <a href="https://github.com/PyO3/pyo3">run Rust in Python</a>. I’m not going to try to summarize what this does because I know very little about it, but I do know that data-intensive packages are moving to Rust (if they aren’t already too deep in the Apache Arrow hole), and it’s worth keeping an eye out for these packages as they come up.</p>
+<p><strong>Static Typing</strong></p>
+<p>I was initially adverse to <a href="https://docs.python.org/3/library/typing.html">type hinting</a> when I first read about it. Why should I specify the type of these objects in my functions when I know that <code>x</code> will always be a <code>float</code>? Looking back, that’s a terrible thought to have.</p>
+<p>Basic type hinting is a must now (or at least for me and many others it is) - it not only helps you keep track of the intended behavior of your scripts, but it also signals to others how to interact with your application. Additionally, third party packages can “compile” your code from the command line to make sure that your objects are being used “properly”.</p>
+<p>Some people go off the deep-end on type hinting - I’m just here to say that Python, a dynamic language, greatly benefits from having type hints. Although it will never be a mandatory feature of the language, it’s good practice to mandate it in your own work.</p>
+<p><strong>Data Validation</strong></p>
+<p>This isn’t new news, but it’s a valid tangent to Static Typing. Since static typing is an optional feature, there’s technically nothing wrong with writing <code>x: int</code> then assigning <code>x = 'string'</code>. That’s where data validation packages come in. Rather than “documenting” behavior, you can assign behavior, including validation functions that run to make sure your object is what it should be and nothing else.</p>
+<p>Python supports <a href="https://docs.python.org/3/library/dataclasses.html"><code>dataclasses</code></a> natively, but <a href="https://docs.pydantic.dev/latest/"><code>pydantic</code></a> is a great alternative (especially for web development). I personally use <a href="https://www.attrs.org/en/stable/"><code>attrs</code></a> and their documentation includes a <a href="https://www.attrs.org/en/stable/why.html">great summary</a> of all three options. Point is: type hinting and data validation are <em>strongly recommended</em> security measures that can really elevate your code (especially if others are using it, including your future self!).</p>
+</div>
+<div id="r" class="section level3 unnumbered">
+<h3>R<a class="anchor" aria-label="anchor" href="#r"><i class="fas fa-link"></i></a>
+</h3>
+<p>I have received plenty of <em>[sic]</em> in my endless attempts to defend R. I do not care what Google Trends or non-statisticians have to say. R is a beautiful language that embraces so much more than statistical software. Even when working in Python, I’ll leave comments angrily showing my frustration with features that are not readily accessible in Python.</p>
+<blockquote>
+<p>Well, since you’re curious, these features are functional programming, native element-wise support, tidy evaluation, the <em>genius</em> pipe operator, … [<em>the following has been emitted since it broke the character limit</em>]</p>
+</blockquote>
+<p>R also benefits from having an excellent development team (Hadley Wickham is great), eager user base, and cohesive package development. Unlike Python, R serves a specific crowd of statisticians and data scientists. Since there’s “less” to focus on, this allows for rapid development of highly specialized tools - including the <code>tidyverse</code> - which make performing these specialized tasks in R very favorable.</p>
+<p>If you’re looking to heighten your R skills or even just develop an appreciation for a severely unappreciated programming language (have I said I’m biased yet), consider reading these resources:</p>
+<ul>
+<li><p><a href="https://www.tidyverse.org/">The Tidyverse</a></p></li>
+<li><p><a href="https://purrr.tidyverse.org/">purrr</a></p></li>
+<li><p><a href="https://adv-r.hadley.nz/">Advanced R</a></p></li>
+<li><p><a href="https://style.tidyverse.org/">The Style Guide</a></p></li>
+</ul>
+</div>
+<div id="sql" class="section level3 unnumbered">
+<h3>SQL<a class="anchor" aria-label="anchor" href="#sql"><i class="fas fa-link"></i></a>
+</h3>
+<p>The argument I hear for not learning SQL is “it’s an old language” or “it’s built-in to the functions I’m already using” or “it’s pronounced <em>S-Q-L</em>, not <em>sequel</em>!!”</p>
+<p>The argument I present for learning SQL is “it’s stood the test of time” and “it’s the foundation for the work we do” and “it’s pronounced both ways!!”</p>
+<p>Pure data engineers won’t agree with me, but it might help to think of SQL more as a skill than a language. That should not try to stop you from learning the intricacies of the language (googling ‘advanced SQL’ brings up some scary links), but unlike the other two languages, this one can be treated the most as an add-on to your tools than an actual tool itself.</p>
+</div>
+<div id="shiny" class="section level3 unnumbered">
+<h3>Shiny<a class="anchor" aria-label="anchor" href="#shiny"><i class="fas fa-link"></i></a>
+</h3>
+<blockquote>
+<p><strong>Links</strong></p>
+<ul>
+<li><p><a href="https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html">Shiny for R</a></p></li>
+<li><p><a href="https://shiny.posit.co/py/">Shiny for Python</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=HpqLXB_TnpI">Joe Cheng | The Past and Future of Shiny | RStudio (2022)</a>; highly recommend this talk as Joe is the single greatest resource for anything Shiny</p></li>
+<li><p><a href="https://mastering-shiny.org/">Mastering Shiny</a>; highly recommend reading even if you only need to reference one chapter</p></li>
+</ul>
+</blockquote>
+<p>If someone approaches you on the street and asks “tell me something about Lucas Nelson”, the only words coming out of your mouth should be “Lucas loves Shiny.” (<em>I plan on making those my final words.</em>)</p>
+<p>What is Shiny? Shiny is the best way to build fast, beautiful web applications and remains extensible enough to power large, mission-critical applications. It brands itself as a framework that allows you to quickly and easily prototype applications, but recent developments allow it to be so much more than something you spin up in <code>localhost</code>. Stylistically, Shiny allows for creating visually stunning applications. Computationally, the reactive components allow for simple cohesion between elements. Relatively, it is a clear winner amid alternatives like <code>Dash</code> or <code>Streamlit</code> (check them out even if you are convinced Shiny is the best).</p>
+<p>Shiny apps are easy to make, and integrations with tools like <a href="https://github.com/cookiecutter/cookiecutter"><code>Cookiecutter</code></a> to handle packaging or any webhosting service to deploy can make prototyping a much better experience for everyone involved.</p>
 
+</div>
 </div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="contributing-to-innovation.html"><span class="header-section-number">3</span> Contributing to Innovation</a></div>
-<div class="next"><a href="opportunistic-areas.html"><span class="header-section-number">5</span> Opportunistic Areas</a></div>
+<div class="next"><a href="areas-of-opportunity.html"><span class="header-section-number">5</span> Areas of Opportunity</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#technology-stack"><span class="header-section-number">4</span> Technology Stack</a></li>
-<li><a class="nav-link" href="#current"><span class="header-section-number">4.1</span> Current</a></li>
-<li><a class="nav-link" href="#future"><span class="header-section-number">4.2</span> Future</a></li>
-<li><a class="nav-link" href="#ideal"><span class="header-section-number">4.3</span> Ideal</a></li>
+<li>
+<a class="nav-link" href="#the-developer-environment"><span class="header-section-number">4.1</span> The Developer Environment</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#integrated-development-environment-ide">Integrated Development Environment (IDE)</a></li>
+<li><a class="nav-link" href="#virtual-environments-venv">Virtual Environments (venv)</a></li>
+<li><a class="nav-link" href="#packages-modules">Packages &amp; Modules</a></li>
+<li><a class="nav-link" href="#version-control">Version Control</a></li>
+<li><a class="nav-link" href="#command-line">Command Line</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#specific-technologies"><span class="header-section-number">4.2</span> Specific Technologies</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#python">Python</a></li>
+<li><a class="nav-link" href="#r">R</a></li>
+<li><a class="nav-link" href="#sql">SQL</a></li>
+<li><a class="nav-link" href="#shiny">Shiny</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">
@@ -107,7 +228,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Innovation Handbook</strong>" was written by Lucas Nelson. It was last built on January 03, 2024.</p>
+    <p>"<strong>Innovation Handbook</strong>" was written by Lucas Nelson. It was last built on January 04, 2024.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

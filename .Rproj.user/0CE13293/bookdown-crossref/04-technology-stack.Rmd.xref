@@ -1,5 +1,13 @@
 h1:technology-stack Technology Stack
-h2:current Current
-h2:future Future
-h2:ideal Ideal
+h2:the-developer-environment The Developer Environment
+h3:integrated-development-environment-ide Integrated Development Environment (IDE)
+h3:virtual-environments-venv Virtual Environments ()
+h3:packages-modules Packages & Modules
+h3:version-control Version Control
+h3:command-line Command Line
+h2:specific-technologies Specific Technologies
+h3:python Python
+h3:r R
+h3:sql SQL
+h3:shiny Shiny
 

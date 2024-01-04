@@ -1,81 +1,35 @@
 # Contributing to Innovation
 
 Innovation projects are great opportunities for flexing your technical muscles.
-Not only do you learn about existing business functions (and meet some people
+Not only do you get to learn about existing business functions (and meet some people
 you might otherwise couldn't), but you contribute to developing really
-interesting solutions for the future.
+interesting solutions that shape the future of our group.
 
-Fortunately, the barrier for innovation seems to lower as time goes on, and my
-innovation experiences and conversations with the new hires should be reason for
-lowering it even more. Let's look into how you can overcome this barrier and
-start contributing to innovation projects.
+Fortunately, the barrier for innovation seems to slowly lower as time goes on.
+Let's look into how you can overcome this barrier and start contributing to innovation projects.
 
 
 ## Join an Existing Project
 
+The best way to build your "innovation resume" is to join an existing project. There are a lot of cool projects going on at any given time, all of which try to solve their own unique problem(s) by developing their own unique solution(s).
 
+How could you join these projects?
 
-- ask around; identify "sources of innovation" and keep up to date with them
+- Keep up to date with innovation resources. Read Things to Know (TTK), stay in touch with people who are in touch with innovation projects, and take the lead on conversations regarding the state of innovation.
 
-- most importantly, advocate for yourself; make your strengths and interests
-clear to others
+- Make your interests common knowledge. If someone tells me they like "x, y, z", well the next time "x, y, z" comes up in conversation, I'll think of them and recommend them if appropriate. Networking always wins.
+
+- Get lucky. Sometimes an innovation project falls in your lap. Better make the most of the opportunity!
+
 
 ## Start Your Own Project
 
-**Disclaimer**: Do not rely on this approach. Discuss your ideas with others
-first, ..., and limit the amount of work you do to 
+> **Disclaimer**: *Do not rely on this approach. Discuss your ideas with others first. If you decide to prototype your idea before discussing with others, limit the amount of work you do to the bare minimum.*
 
-- management will disagree with this approach; make sure to follow the
-guidelines discussed in [the previous section](#the-roles-on-a-team) before
-dedicating significant resources to your project.
+Rather than waiting for a project to spawn that matches your interests or has a problem statement you can relate to, another valid option for building your "innovation resume" is by creating your own project. Sometimes creating a project is as simple as discussing your idea with a couple others and securing support from them to work on your project. Other times, it's a long, tedious process that requires you to vouch for yourself and your project.
 
+Additionally, innovation projects are internally funded, and with finite resources, we can't support all innovation projects even if their ideas are worth exploring at that point in time.
 
-## Keeping Up-to-Date with Innovation
+Regardless of these caveats (which you should not ignore), creating your own project is a rewarding endeavor. The initial stages of a project are the most challenging, and generating your own experiences by managing, developing, and presenting your own product is an invaluable skill that will benefit you anywhere you go. Although I don't consider myself an expert, I've started a couple innovation projects, all of which turned out to be highly beneficial regardless of their current state.
 
-- Things to Know (TTK)
-
-## Soapbox: Innovation Project Limitations
-
-You have an idea or want to join an interesting project. All you see are green
-lights ahead of you. What could stop you from realizing your dreams?
-
-There are some rather unexciting reasons for why your innovation dreams may come
-to a halting stop or - if you're lucky - reach a fraction of the vision you had
-in mind.
-
-1. Innovation Projects are Internally Funded
-
-Unlike client work, innovation projects do not generate revenue. Although I do
-not agree with that statement (innovation projects *could* generate revenue or
-lower costs), that is the greatest constraint you will face. Truly, there is no
-way around this other than putting together a detailed breakdown of the supposed
-benefits of your project, and even this is a loose, often unconvincing, argument
-of $\text{Time Saved} \times \text{Dollars per Time} = \text{Big Money}$.
-
-2. Innovation Projects are Doing Too Much
-
-Have I mentioned innovation projects require a specific, narrow scope?
-
-Innovation projects vary per project: they all try to address their own unique
-problem(s) with their own unique solution(s). This itself is a major caveat we
-inflict upon ourselves. Every innovation project starts from scratch when they
-could be sharing resources instead. They could also share what does and doesn't
-work which would prevent teams from building out these massive scopes that
-ultimately lead to the their own demise.
-
-It's unfair to point fingers, but our lack of innovation guidelines or
-innovation repositories puts these projects off on a bad trajectory from the
-beginning.
-
-3. Innovation Projects are Treated Unfairly
-
-Regardless of budget constraints or technical constraints, innovation projects
-continue to be looked at as nothing more than "*passion projects*". I understand
-our priorities are client work; however, that doesn't mean something that is
-fundamentally "not client work" cannot eventually impact client work. If you
-develop a tool that drastically changes the way we perform client work (ideally,
-for the better), this should be allocated as many - if not, more - resources
-than the identical time you would've spent performing client work.
-
-If we represent innovation in audit, we should provide the necessary support for
-projects that truly innovate our audit procedures.
+If you do go this route, consider reading [The Roles of an Innovation Project](#02-roles) again as you will be assuming all responsibilities - at least initially - for your project.

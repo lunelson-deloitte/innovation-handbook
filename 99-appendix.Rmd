@@ -16,17 +16,9 @@ Developer", a degree in computer science, or certificates from tech companies.
 I only know what I know, and I'm happy to admit there's a lot that I do not
 know.
 
-Before reading this section, ask yourself how you define the role of a
-software developer. What is it? What do they do? How do they contribute?
 
 **The software developer uses machines to translate intangible ideas into
 tangible applications.**
-
-End of story. Let's pack up and go home.
-
-Sure, "*machines*" is rather vague, and it ends up being "programming" anyway.
-
-
 
 
 ## My Software-Developing Philosophies {- .unlisted}

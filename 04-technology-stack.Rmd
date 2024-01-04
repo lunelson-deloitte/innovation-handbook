@@ -1,13 +1,123 @@
 # Technology Stack 
 
-## Current
+Having a solid developer environment is like having a comfy workspace for a coder. It's not just about having a cool-looking code editor or a virtual environment to keep things tidy — it's about creating a space where creativity and efficiency can thrive. An IDE (Integrated Development Environment) is like your personalized command center, with features that help you write, debug, and navigate code with ease. Virtual environments (`venv`) are like mini coding sanctuaries, keeping your projects isolated and preventing compatibility chaos. These tools aren't just fancy accessories; they're the backbone of productive coding. Imagine trying to build a masterpiece without a clean canvas and good brushes — it's possible, but why make it harder on yourself? A well-organized and tailored developer environment is the secret sauce that turns lines of code into functional and elegant software.
 
-something here
+## The Developer Environment
 
-## Future
+Before getting into specific technologies, I want to stress the importance of setting up a developer environment that works for you. The more time you spend setting up a toolbench that suits your needs, the less time you spend navigating your toolkit in the future, allowing you to be more efficient, more organized, and more cognizant of software developing best practices.
 
-something here
+### Integrated Development Environment (IDE) {-}
 
-## Ideal
+> [Visual Studio Code](https://code.visualstudio.com/)
 
-something here
+IDE is another term for *fancy text editor*. You could type everything in a text file, or you could develop in an enhanced text editor that will validate that what you're typing is "correct" (as defined by the IDE) and make things look pretty with syntax highlighting. IDEs are good for [linting](https://en.wikipedia.org/wiki/Lint_(software)) your code, making sure that the thing you shouldn't be doing is brought to your attention before doing it. You could lint code yourself (linters like [Ruff](https://github.com/astral-sh/ruff) get pretty techy with it), but if you're looking for a good place to start, get an IDE like Visual Studio Code, add a couple extensions, and get coding.
+
+### Virtual Environments (`venv`) {-}
+
+> - Python's base [`venv`](https://docs.python.org/3/library/venv.html) library
+> 
+> - R's [`renv`](https://rstudio.github.io/renv/articles/renv.html) package
+
+Virtual environments are the coding-equivalent for flossing your teeth; you know you should do it but sometimes you "forget" and say you'll do it next time. Admittedly, this is me, so maybe it's not fair for me to take the role of virtual-environment-dentist and criticize you.
+
+Virtual environments are great outlets for organizing your development environments. They allow you to isolate specific sets of packages (and even specific versions of packages) from one another, allowing you to operate under a specific environment freely. This also protects your code against unintentional updates to any of the packages you require, letting you live "in the good old days" as long as you don't delete your virtual environment.
+
+### Packages & Modules {-}
+
+> - The [Py-Pkgs](https://py-pkgs.org/) book is a great resource for getting up to speed
+> 
+> - The [R Packages](https://r-pkgs.org/) book is a deep dive into packaging in R (also Hadley Wickham is great)
+
+The next stop on this coding-equivalent train is recycling your code. Rather than building things from scratch every time, developing packages and modules, even if just for your own use, allow you to skip "square one" every time you get into the swing of things.
+
+This can involve setting up configuration files that you rely on, importing commonly used constants or functions, or even just documenting your thoughts in a centralized repository. It also opens the door for sharing your work with others, promoting collaboration and requiring you to continuously maintain the integrity of your package/module.
+
+### Version Control {-}
+
+> - [Git](https://git-scm.com/)
+> 
+> - [GitHub](https://github.com/)
+
+Comfort with Git and GitHub is a non-negotiable requirement Git, the distributed version control system, ensures seamless collaboration and tracks changes with precision. GitHub, as the platform of choice for hosting repositories, provides a centralized hub for teamwork. Proficiency in these tools is paramount for version control, branching strategies, and collaborative coding. In essence, a developer well-versed in Git and GitHub is equipped to contribute effectively to projects, maintain code integrity, and navigate the collaborative nature of modern software development
+
+### Command Line {-}
+
+> - [Linux](https://linuxcommand.org/tlcl.php) - it's unfair to say "this is what I am comfortable with", but this is what I am comfortable with
+
+Proficiency in the command line is a cornerstone skill. It serves as a fundamental tool for tasks ranging from file navigation to script execution and debugging. Being adept at the command line not only enhances efficiency but also empowers developers to streamline workflows and troubleshoot with precision. In essence, it's a practical and indispensable asset for any developer looking to navigate the complexities of coding with ease and precision.
+
+## Specific Technologies
+
+Story time. During the first week of college, I spent a lot of time looking through all the courses my school had to offer. I hadn't taken a programming class at that time, but that didn't stop me from browsing through the Computer Science department's catalog, bookmarking every class that mentioned a programming language I had never heard of before. I took out a Post-It note, wrote them down, and stuck it on my desk to remind myself that I *needed* to learn these languages.
+
+> Just checked, I wrote down 17 different languages.
+
+Fast forward to current day, I am comfortable using two languages and actively avoid trying to add a third unless absolutely necessary. I very quickly learned that there's no benefit in knowing surface-level details across many languages; the real power is in reaching the depths of fewer languages, and each time you reach "the bottom" you realize you're nowhere near it.
+
+Before reading this section, consider that last sentence. If the recursive feeling of "never reaching the bottom" makes you feel uncomfortable, really try to push past that feeling. I am by no means a professional athlete, but one thing I'll hear any athlete say is that they are comfortable being uncomfortable, that they perform their best when the odds are stacked against them. Computer science is an intimidating field only if you allow it to intimidate you. Embrace these feelings, learn from your experiences, and you'll reach deeper and deeper depths.
+
+### Python {-}
+
+Is it really a surprise Python is on here? I am going to try my best to avoid saying anything you already know. Instead, I'll just list some things I'm really excited about that you should look into:
+
+**Rust Integration**
+
+Python is not a low-level language and suffers from "slow" run-time performance. *Old news*. Although there are packages like `CPython` and `Numba` have tried to introduce low-level features to "make Python faster", the new, cool, hip thing to do nowadays is [run Rust in Python](https://github.com/PyO3/pyo3). I'm not going to try to summarize what this does because I know very little about it, but I do know that data-intensive packages are moving to Rust (if they aren't already too deep in the Apache Arrow hole), and it's worth keeping an eye out for these packages as they come up.
+
+**Static Typing**
+
+I was initially adverse to [type hinting](https://docs.python.org/3/library/typing.html) when I first read about it. Why should I specify the type of these objects in my functions when I know that `x` will always be a `float`? Looking back, that's a terrible thought to have.
+
+Basic type hinting is a must now (or at least for me and many others it is) - it not only helps you keep track of the intended behavior of your scripts, but it also signals to others how to interact with your application. Additionally, third party packages can "compile" your code from the command line to make sure that your objects are being used "properly".
+
+Some people go off the deep-end on type hinting - I'm just here to say that Python, a dynamic language, greatly benefits from having type hints. Although it will never be a mandatory feature of the language, it's good practice to mandate it in your own work.
+
+**Data Validation**
+
+This isn't new news, but it's a valid tangent to Static Typing. Since static typing is an optional feature, there's technically nothing wrong with writing `x: int` then assigning `x = 'string'`. That's where data validation packages come in. Rather than "documenting" behavior, you can assign behavior, including validation functions that run to make sure your object is what it should be and nothing else.
+
+Python supports [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) natively, but [`pydantic`](https://docs.pydantic.dev/latest/) is a great alternative (especially for web development). I personally use [`attrs`](https://www.attrs.org/en/stable/) and their documentation includes a [great summary](https://www.attrs.org/en/stable/why.html) of all three options. Point is: type hinting and data validation are *strongly recommended* security measures that can really elevate your code (especially if others are using it, including your future self!).
+
+### R {-}
+
+I have received plenty of *[sic]* in my endless attempts to defend R. I do not care what Google Trends or non-statisticians have to say. R is a beautiful language that embraces so much more than statistical software. Even when working in Python, I'll leave comments angrily showing my frustration with features that are not readily accessible in Python.
+
+> Well, since you're curious, these features are functional programming, native element-wise support, tidy evaluation, the *genius* pipe operator, ... [*the following has been emitted since it broke the character limit*]
+
+R also benefits from having an excellent development team (Hadley Wickham is great), eager user base, and cohesive package development. Unlike Python, R serves a specific crowd of statisticians and data scientists. Since there's "less" to focus on, this allows for rapid development of highly specialized tools - including the `tidyverse` - which make performing these specialized tasks in R very favorable.
+
+If you're looking to heighten your R skills or even just develop an appreciation for a severely unappreciated programming language (have I said I'm biased yet), consider reading these resources:
+
+- [The Tidyverse](https://www.tidyverse.org/)
+
+- [purrr](https://purrr.tidyverse.org/)
+
+- [Advanced R](https://adv-r.hadley.nz/)
+
+- [The Style Guide](https://style.tidyverse.org/)
+
+### SQL {-}
+
+The argument I hear for not learning SQL is "it's an old language" or "it's built-in to the functions I'm already using" or "it's pronounced *S-Q-L*, not *sequel*!!"
+
+The argument I present for learning SQL is "it's stood the test of time" and "it's the foundation for the work we do" and "it's pronounced both ways!!"
+
+Pure data engineers won't agree with me, but it might help to think of SQL more as a skill than a language. That should not try to stop you from learning the intricacies of the language (googling 'advanced SQL' brings up some scary links), but unlike the other two languages, this one can be treated the most as an add-on to your tools than an actual tool itself.
+
+### Shiny {-}
+
+> **Links**
+>
+> - [Shiny for R](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html)
+>
+> - [Shiny for Python](https://shiny.posit.co/py/)
+>
+> - [Joe Cheng | The Past and Future of Shiny | RStudio (2022)](https://www.youtube.com/watch?v=HpqLXB_TnpI); highly recommend this talk as Joe is the single greatest resource for anything Shiny
+>
+> - [Mastering Shiny](https://mastering-shiny.org/); highly recommend reading even if you only need to reference one chapter
+
+If someone approaches you on the street and asks "tell me something about Lucas Nelson", the only words coming out of your mouth should be "Lucas loves Shiny." (*I plan on making those my final words.*)
+
+What is Shiny? Shiny is the best way to build fast, beautiful web applications and remains extensible enough to power large, mission-critical applications. It brands itself as a framework that allows you to quickly and easily prototype applications, but recent developments allow it to be so much more than something you spin up in `localhost`. Stylistically, Shiny allows for creating visually stunning applications. Computationally, the reactive components allow for simple cohesion between elements. Relatively, it is a clear winner amid alternatives like `Dash` or `Streamlit` (check them out even if you are convinced Shiny is the best).
+
+Shiny apps are easy to make, and integrations with tools like [`Cookiecutter`](https://github.com/cookiecutter/cookiecutter) to handle packaging or any webhosting service to deploy can make prototyping a much better experience for everyone involved.

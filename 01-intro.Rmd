@@ -1,20 +1,21 @@
 # Innovation in Audit Analytics
 
-Something something something.
-
 ## A Brief History
 
 *What have the last couple years looked like for innovation in Audit Analytics?*
 
+- discuss Rohan, `rDWW`, `AutoMemo v0`
+
 
 ## Modern Day
 
-*Where is that state of innovation in Audit Analytics today?*
-
-
 *Who/What are the "sources of innovation"?*
 
-Innovation appeals to everyone in unique ways. Some are interested in the 
+- argue for more "innovation-related" discussions; everyone has great ideas, just need platform to discuss them freely/frequently
+
+- most opportunities are word of mouth; no dedicated/reliable source of innovation projects
+
+- discuss myself + others, `AutoMemo v1`, etc.
 
 
 ## Before AI Takes Over
@@ -23,4 +24,6 @@ Innovation appeals to everyone in unique ways. Some are interested in the
 
 That title was clickbait.
 
+- discuss trends: data processing, user interfaces, standardization
 
+- upcoming projects: widely applicable projects (`AutoMemo v2`), new territory (`clustering project`), etc.

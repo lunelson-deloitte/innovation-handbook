@@ -1,4 +1,4 @@
-# Opportunistic Areas
+# Areas of Opportunity
 
 With the restrictions we have surrounding innovation, it makes working on "*really cool*" projects even tougher to come by.
 
@@ -9,19 +9,25 @@ The following are some areas that I believe are the Wild Wests of innovation - f
 I believe we could/should focus on developing analytics with a mathematical focus.
 
 - introduce (more) mathematical rigor in audit procedures
+
 - plenty of applications (probabilistic fraud detection, unsupervised learning, etc.)
+
 - foundation for machine learning, artificial intelligence
 
 ## Data Engineering
 
 I believe we could/should develop robust ELT/ETL pipelines.
 
-- introduce proper pipeline methods (file i/o, sql scripts, logging)
-- ...
+- introduce proper data processing methods (file i/o, sql scripts, attach data and behavior)
+
+- introduce proper error handling methods (logging, testing, *principle of least astonishment*)
+
+- introduce proper software development methods (packages/modules, databases, version control)
 
 ## Software Development
 
 I believe we could/should reduce user involvement to minimal inputs.
 
 - specifically, app development; how can we reduce user involvement to necessary inputs?
+
 - database architecture; how do we efficiently store/process/export data of any type?
